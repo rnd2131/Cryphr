@@ -183,7 +183,7 @@
 
 .waybar {
 	position: absolute;
-	width: calc(100% - 2 * var(--uniMargin) - var(--waybarHeight));
+	width: calc(100% + 8 * var(--uniMargin) - var(--waybarHeight));
 	height: calc(var(--waybarHeight) - 2.25 * 2 * var(--uniMargin));
 	top: calc(var(--uniMargin));
 	right: var(--uniMargin);
@@ -355,7 +355,7 @@
 
 .iframeWindow {
 	position: absolute;
-	width: calc(100% - 3 * var(--uniMargin));
+	width: calc(100% * var(--uniMargin));
 	height: calc(
 		100% - var(--uniMargin) - var(--waybarHeight) -
 			(var(--botBarHeight) + var(--uniMargin))
@@ -1350,7 +1350,6 @@ body {
 	font-family: 'Open Sans';
 	color: var(--textCol);
 	user-select: none;
-	background-image: var(--bgCol);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: var(--bgCol);
