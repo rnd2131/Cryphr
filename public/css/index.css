@@ -8,16 +8,16 @@
 */
 :root {
 	/* Background */
-	--bgCol: url('../assets/bgImg.png');
+	--bgCol:#2e2e2e;
 	/* Window Properties */
 	--windowCol: #141414d1;
 	--windowBlur: 1vh;
 	--windowBrightness: 1;
 	--windowContrast: 1.1;
-	--frontElementCol: #f1f1f114;
+	--frontElementCol: #494949;
 	--textCol: #fff;
 	--textColSec: #fff9;
-	--linkCol: #5a2491;
+	--linkCol: #007bff;
 	/* Shadow properties */
 	--shadowCol: rgba(255, 255, 255, 0.02);
 	--shadowRad: 0px 4px 4px;
@@ -31,7 +31,7 @@
 	/* Border */
 	--borderRad: 7px;
 	--borderThickness: 1.75px;
-	--borderCol: #9c9c9c5b;
+	--borderCol: #000000;
 	/* Transitions */
 	--transitionSpeed: 0.4s;
 	--fastTransitionSpeed: 0.1s;
@@ -52,7 +52,7 @@
 	--hoverWindowBrightness: 1.2;
 	--hoverWindowContrast: 1.15;
 	--hoverBorderCol: #a1a1ffe7;
-	--hoverWindowCol: #141414d1;
+	--hoverWindowCol: #141414;
 	--hoverBorderThickness: var(--borderThickness);
 	--hoverBorderRad: 0.8;
 	--hoverBorderOpacity: rgba(255, 255, 255, 0.744);
@@ -68,7 +68,7 @@
 		calc(alpha(var(--hoverBorderCol)) * alpha(var(--hoverBorderOpacity)))
 	);
 	--hoverShadowRad: 0px 0px var(--fullMenuOffset);
-	--hoverFrontElementCol: #f1f1f120;
+	--hoverFrontElementCol: #2c2c2c;
 	--hoverActiveWindowBlur: calc(var(--hoverWindowBlur) / 6);
 	--hoverActiveWindowBrightness: calc(var(--hoverWindowBrightness) - 0.3);
 	--hoverActiveWindowContrast: var(--hoverWindowContrast);
