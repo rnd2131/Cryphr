@@ -24,7 +24,7 @@
 	/* Margins */
 	--uniMargin: 1vh;
 	--waybarHeight: 10vh;
-	--urlInputLength: 43vw;
+	--urlInputLength: 90%;
 	--botBarHeight: 4.5vh;
 	--botBarFontSize: 0.8;
 	--fullMenuSize: 25vh;
@@ -33,8 +33,8 @@
 	--borderThickness: 1.75px;
 	--borderCol: #000000;
 	/* Transitions */
-	--transitionSpeed: 0.4s;
-	--fastTransitionSpeed: 0.1s;
+	--transitionSpeed: 0.0s;
+	--fastTransitionSpeed: 0.0s;
 	/* Menu */
 	--menuButtonCol: var(--textCol);
 	/* Active */
@@ -132,13 +132,6 @@
 		((var(--uniMargin)) + (var(--botBarHeight))) * var(--hoverCoefficient) -
 			var(--hoverConst) / 2
 	);
-	border-radius: calc(var(--borderRad) * var(--hoverBorderRad));
-	box-shadow: var(--hoverShadowRad) var(--hoverShadowCol);
-	border: var(--hoverBorderThickness) solid var(--hoverBorderCol);
-	background-color: var(--hoverWindowCol);
-	backdrop-filter: blur(var(--hoverWindowBlur))
-		brightness(var(--hoverWindowBrightness))
-		contrast(var(--hoverWindowContrast));
 }
 
 .menuOpen-mainWindow {
@@ -215,31 +208,6 @@
 		fill var(--transitionSpeed) ease;
 }
 
-.waybar:hover {
-	width: calc(
-		(100% - 2 * var(--uniMargin) - var(--waybarHeight)) *
-			var(--hoverCoefficient) + var(--hoverConst)
-	);
-	height: calc(
-		(var(--waybarHeight) - 2.25 * 2 * var(--uniMargin)) *
-			var(--hoverCoefficient) + var(--hoverConst)
-	);
-	right: calc(
-		var(--uniMargin) - (100% - 2 * var(--uniMargin)) *
-			(var(--hoverCoefficient) - 1) / 2 - var(--hoverConst) / 4
-	);
-	top: calc(
-		var(--uniMargin) - (100% - var(--uniMargin) - var(--waybarHeight)) *
-			(var(--hoverCoefficient) - 1) / 2 - var(--hoverConst) / 2
-	);
-	border-radius: calc(var(--borderRad) * var(--hoverBorderRad));
-	box-shadow: var(--hoverShadowRad) var(--hoverShadowCol);
-	border: var(--hoverBorderThickness) solid var(--hoverBorderCol);
-	background-color: var(--hoverWindowCol);
-	backdrop-filter: blur(var(--hoverWindowBlur))
-		brightness(var(--hoverWindowBrightness))
-		contrast(var(--hoverWindowContrast));
-}
 
 .menuOpen-waybar {
 	width: calc(
