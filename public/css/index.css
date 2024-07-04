@@ -263,7 +263,7 @@
 #searchButton {
 	position: absolute;
 	left: calc(
-		var(--urlInputLength) + var(--waybarHeight) - 1em - var(--waybarHeight) /
+		var(--urlInputLength) + var(--waybarHeight) + 1em - var(--waybarHeight) /
 			3
 	);
 	transform: translateY(-3%) translateX(-50%);
@@ -272,8 +272,8 @@
 	background-color: rgba(0, 0, 0, 0);
 	border: transparent;
 	font-family: 'Open Sans';
-	font-size: calc(var(--waybarHeight) / 4);
-	color: #7c7777;
+	font-size: calc(var(--waybarHeight) / 3);
+	color: #ffffff;
 	font-weight: 100;
 	transition: all var(--transitionSpeed) ease;
 }
