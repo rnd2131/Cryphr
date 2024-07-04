@@ -24,7 +24,7 @@
 	/* Margins */
 	--uniMargin: 1vh;
 	--waybarHeight: 10vh;
-	--urlInputLength: 90%;
+	--urlInputLength: 43vw;
 	--botBarHeight: 4.5vh;
 	--botBarFontSize: 0.8;
 	--fullMenuSize: 25vh;
@@ -33,7 +33,7 @@
 	--borderThickness: 1.75px;
 	--borderCol: #000000;
 	/* Transitions */
-	--transitionSpeed: 0.0s;
+	--transitionSpeed: 0.1s;
 	--fastTransitionSpeed: 0.0s;
 	/* Menu */
 	--menuButtonCol: var(--textCol);
@@ -51,7 +51,7 @@
 	--hoverWindowBlur: 0.7vw;
 	--hoverWindowBrightness: 1.2;
 	--hoverWindowContrast: 1.15;
-	--hoverBorderCol: #a1a1ffe7;
+	--hoverBorderCol: #00000000;
 	--hoverWindowCol: #141414;
 	--hoverBorderThickness: var(--borderThickness);
 	--hoverBorderRad: 0.8;
@@ -112,27 +112,6 @@
 		fill var(--transitionSpeed) ease;
 }
 
-.mainWindow:hover {
-	user-select: none;
-}
-.mainWindow:hover.hoverable {
-	width: calc(
-		(100% - 2 * var(--uniMargin)) * var(--hoverCoefficient) +
-			var(--hoverConst)
-	);
-	height: calc(
-		(100% - var(--waybarHeight)) * var(--hoverCoefficient) +
-			var(--hoverConst) - (var(--botBarHeight)) + 1.5 * var(--uniMargin)
-	);
-	right: calc(
-		var(--uniMargin) - (100% - 2 * var(--uniMargin)) *
-			(var(--hoverCoefficient) - 1) / 2 - var(--hoverConst) / 2
-	);
-	bottom: calc(
-		((var(--uniMargin)) + (var(--botBarHeight))) * var(--hoverCoefficient) -
-			var(--hoverConst) / 2
-	);
-}
 
 .menuOpen-mainWindow {
 	width: calc(
@@ -267,8 +246,8 @@
 
 #reloadButton {
 	position: absolute;
-	left: calc(var(--waybarHeight) / 3 - var(--uniMargin));
-	margin: 0;
+	left: 0;
+	margin: 15px;
 	padding: 0;
 	background-color: rgba(0, 0, 0, 0);
 	border: transparent;
@@ -279,7 +258,6 @@
 }
 #reloadButton:hover {
 	cursor: pointer;
-	transform: rotate(360deg) scale(1.2);
 }
 
 #searchButton {
@@ -301,7 +279,6 @@
 }
 #searchButton:hover {
 	cursor: pointer;
-	transform: translateY(-3%) translateX(-50%) scale(1.2);
 }
 
 #settingsButton {
