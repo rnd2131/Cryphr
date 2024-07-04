@@ -12,11 +12,9 @@ const cacheName = 'v1';
 const cacheAssets = [
   '/',
   '/index.html',
-  '/css/style.css',
-  '/js/main.js',
-  '/images/image.jpg',
-  '/news.html',
-  '/newsSR.html'
+  '/css/index.css',
+  '/js/',
+  '/assets/',
 ];
 
 // Install Event
